@@ -15,7 +15,7 @@ const geistMono = localFont({
   weight: "100 900",
 });
 
-export const metadata = {
+export const metadata: Metadata = {
   title: 'Zavolah Ltd | Renewable Energy, Smart Furniture & Sustainable Construction Solutions',
   description: 'Specialist in renewable energy, smart furniture and sustainable construction solutions',
   keywords: 'zavolah, zavolah ltd, zavolah limited, solar energy, renewable energy, smart furniture, space saving furniture, sustainable construction, energy solutions',
@@ -37,7 +37,7 @@ export default function RootLayout({
               "@type": "Organization",
               "name": "Zavolah Ltd",
               "url": "https://zavolah.com",
-              "description": "Specialist in renewable energy, smart furniture and sustainable construction solutions",
+              "description": metadata.description,
               "sameAs": [
                 "https://www.linkedin.com/company/zavolah",
                 "https://twitter.com/zavolah"
