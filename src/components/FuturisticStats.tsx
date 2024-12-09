@@ -144,7 +144,7 @@ export function FuturisticStats() {
                       opacity: [0, 1, 0] // Fade in and out
                     }}
                     transition={{
-                      duration: 35,
+                      duration: 15,
                       repeat: Infinity,
                       times: [0, 0.9, 1], // Controls timing of opacity changes
                       ease: "linear"
