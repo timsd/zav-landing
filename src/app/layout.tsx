@@ -13,18 +13,37 @@ const geistMono = localFont({
   weight: "100 900",
 });
 
-export const metadata: Metadata = {
-  title: "Renewable Energy Solutions, Smart Furniture and Construction | Zavolah",
-  description: "Zavolah is a leading specialist in providing renewable energy, smart furniture and stustainable construction solutions. Our mission is to transform spaces into sustainable and energy-efficient environments, while delivering exceptional value to our clients.",
-};
+export const metadata = {
+  title: 'Zavolah Ltd | Renewable Energy, Smart Furniture & Sustainable Construction Solutions',
+  description: 'Specialist in renewable energy, smart furniture and sustainable construction solutions',
+  keywords: 'zavolah, zavolah ltd, zavolah limited, solar energy, renewable energy, smart furniture, space saving furniture, sustainable construction, energy solutions',
+}
 
 export default function RootLayout({
   children,
-}: Readonly<{
-  children: React.ReactNode;
-}>) {
+}: {
+  children: React.ReactNode
+}) {
   return (
     <html lang="en">
+      <head>
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              "@context": "https://schema.org",
+              "@type": "Organization",
+              "name": "Zavolah Ltd",
+              "url": "https://zavolah.com",
+              "description": "Specialist in renewable energy, smart furniture and sustainable construction solutions",
+              "sameAs": [
+                "https://www.linkedin.com/company/zavolah",
+                "https://twitter.com/zavolah"
+              ]
+            })
+          }}
+        />
+      </head>
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
