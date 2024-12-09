@@ -5,6 +5,5 @@
   [[plugins]]
     package = "@netlify/plugin-nextjs"
 
-  # Add cache configuration
-  [[plugins.inputs]]
+  [plugins.inputs]
     cache = true
