@@ -6,4 +6,3 @@
     package = "@netlify/plugin-nextjs"
 
   [plugins.inputs]
-    cache = true
