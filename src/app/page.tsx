@@ -11,11 +11,7 @@ export default function Home() {
           ZAVOLAH
         </h1>
 
-        <TypewriterEffect />
-        
-        <FuturisticStats />
-
-        <div className="mt-16 flex flex-wrap justify-center gap-4">
+        <div className="mb-8 flex flex-wrap justify-center gap-4">
           {['Renewable Energy', 'Smart Furniture', 'Construction'].map((service) => (
             <div 
               key={service}
@@ -25,7 +21,12 @@ export default function Home() {
             </div>
           ))}
         </div>
+
+        <TypewriterEffect />
+        
+        <FuturisticStats />
       </div>
     </main>
   )
 }
+
